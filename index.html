@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Unfollowers Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Unfollowers Checker</h1>
+        <div class="upload-section">
+            <label for="followersFile">Upload Followers File:</label>
+            <input type="file" id="followersFile" accept=".txt">
+        </div>
+        <div class="upload-section">
+            <label for="followingFile">Upload Following File:</label>
+            <input type="file" id="followingFile" accept=".txt">
+        </div>
+        <button id="checkUnfollowers">Check Unfollowers</button>
+        <div id="result" class="result">
+            <h2>Unfollowers:</h2>
+            <ul id="unfollowersList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
