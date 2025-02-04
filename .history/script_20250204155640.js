@@ -98,3 +98,18 @@ setTimeout(() => {
     unfollowersList.classList.add('show'); // Tambahkan class untuk animasi
 }, 2100); // Sesuaikan dengan waktu proses
 
+ul#unfollowersList li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    color: #555;
+    word-wrap: break-word;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+ul#unfollowersList li:hover {
+    background: #f1f1f1;
+    transform: translateX(5px); /* Sedikit bergeser ke kanan saat hover */
+}

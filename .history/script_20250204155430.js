@@ -93,8 +93,3 @@ document.getElementById('checkUnfollowers').addEventListener('click', function (
     }, 2000); // Ganti dengan waktu proses yang sesuai
 });
 
-setTimeout(() => {
-    const unfollowersList = document.getElementById('unfollowersList');
-    unfollowersList.classList.add('show'); // Tambahkan class untuk animasi
-}, 2100); // Sesuaikan dengan waktu proses
-

@@ -128,3 +128,24 @@ ul#unfollowersList li:hover {
     background: #f1f1f1;
     cursor: pointer;
 }
+
+button#checkUnfollowers {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button#checkUnfollowers:hover {
+    background: #45a049;
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+button#checkUnfollowers:active {
+    transform: scale(0.95); /* Sedikit mengecil saat diklik */
+}

@@ -93,38 +93,3 @@ ul li {
     border-radius: 4px;
     color: #555;
 }
-
-/* Tambahkan ini ke CSS Anda */
-
-.result {
-    margin-top: 30px;
-    text-align: left;
-    max-height: 300px; /* Atur tinggi maksimal container */
-    overflow-y: auto; /* Tambahkan scroll jika konten melebihi tinggi */
-    border: 1px solid #ddd; /* Tambahkan border untuk kejelasan */
-    border-radius: 8px;
-    padding: 15px;
-    background: #f9f9f9;
-}
-
-ul#unfollowersList {
-    margin: 0;
-    padding: 0;
-}
-
-ul#unfollowersList li {
-    background: #fff;
-    margin: 10px 0;
-    padding: 12px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    color: #555;
-    word-wrap: break-word; /* Memastikan teks panjang tidak overflow */
-    overflow-wrap: break-word; /* Memastikan teks panjang tidak overflow */
-}
-
-/* Jika ingin menambahkan hover effect pada list item */
-ul#unfollowersList li:hover {
-    background: #f1f1f1;
-    cursor: pointer;
-}

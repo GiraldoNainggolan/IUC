@@ -97,4 +97,3 @@ setTimeout(() => {
     const unfollowersList = document.getElementById('unfollowersList');
     unfollowersList.classList.add('show'); // Tambahkan class untuk animasi
 }, 2100); // Sesuaikan dengan waktu proses
-

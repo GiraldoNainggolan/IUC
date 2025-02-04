@@ -73,28 +73,3 @@ function displayUnfollowers(unfollowers) {
     });
 }
 
-document.getElementById('checkUnfollowers').addEventListener('click', function () {
-    const loading = document.getElementById('loading');
-    loading.style.display = 'block'; // Tampilkan loading
-
-    // Simulasikan proses (ganti dengan proses asli)
-    setTimeout(() => {
-        const unfollowers = ['user1', 'user2_with_a_very_long_username', 'user3', 'user4', 'user5'];
-        const unfollowersList = document.getElementById('unfollowersList');
-        unfollowersList.innerHTML = '';
-
-        unfollowers.forEach(user => {
-            const li = document.createElement('li');
-            li.textContent = user;
-            unfollowersList.appendChild(li);
-        });
-
-        loading.style.display = 'none'; // Sembunyikan loading setelah selesai
-    }, 2000); // Ganti dengan waktu proses yang sesuai
-});
-
-setTimeout(() => {
-    const unfollowersList = document.getElementById('unfollowersList');
-    unfollowersList.classList.add('show'); // Tambahkan class untuk animasi
-}, 2100); // Sesuaikan dengan waktu proses
-
