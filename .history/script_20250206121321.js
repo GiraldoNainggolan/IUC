@@ -18,6 +18,20 @@ document.getElementById("checkUnfollowers").addEventListener("click", async () =
     }
 });
 
+document.getElementById('checkUnfollowers').addEventListener('click', function () {
+    // Contoh data unfollower (ganti dengan data asli dari file yang diupload)
+    const unfollowers = ['user1', 'user2_with_a_very_long_username', 'user3', 'user4', 'user5'];
+
+    const unfollowersList = document.getElementById('unfollowersList');
+    unfollowersList.innerHTML = ''; // Kosongkan list sebelum menambahkan data baru
+
+    unfollowers.forEach(user => {
+        const li = document.createElement('li');
+        li.textContent = user;
+        unfollowersList.appendChild(li);
+    });
+});
+
 async function extractUsernamesFromHTML(file) {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
@@ -54,11 +68,33 @@ function displayUnfollowers(unfollowers) {
 
     unfollowers.forEach(user => {
         const listItem = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = `https://www.instagram.com/${user}/`;
-        link.target = "_blank";
-        link.textContent = user;
-        listItem.appendChild(link);
+        listItem.textContent = user;
         list.appendChild(listItem);
     });
 }
+
+document.getElementById('checkUnfollowers').addEventListener('click', function () {
+    const loading = document.getElementById('loading');
+    loading.style.display = 'block'; // Tampilkan loading
+
+    // Simulasikan proses (ganti dengan proses asli)
+    setTimeout(() => {
+        const unfollowers = ['user1', 'user2_with_a_very_long_username', 'user3', 'user4', 'user5'];
+        const unfollowersList = document.getElementById('unfollowersList');
+        unfollowersList.innerHTML = '';
+
+        unfollowers.forEach(user => {
+            const li = document.createElement('li');
+            li.textContent = user;
+            unfollowersList.appendChild(li);
+        });
+
+        loading.style.display = 'none'; // Sembunyikan loading setelah selesai
+    }, 2000); // Ganti dengan waktu proses yang sesuai
+});
+
+setTimeout(() => {
+    const unfollowersList = document.getElementById('unfollowersList');
+    unfollowersList.classList.add('show'); // Tambahkan class untuk animasi
+}, 2100); // Sesuaikan dengan waktu proses
+
